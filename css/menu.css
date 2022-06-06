@@ -1,0 +1,56 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+
+    /* overflow resolve o efeito colateral do float */
+    overflow: hidden;
+}
+
+/* Deixando os itens da lista "flutuados" à esquerda (na prática, lado a lado) */
+.menu li { float: left; }
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: blue;
+}
+
+/* ESCONDENDO A OPÇÃO DO ITEM MENU */
+
+.menu li.icone { display: none; }
+
+@media screen and (max-width: 760px){
+
+    /*Escondemos os itens do menu */
+    .menu li { display: none; }
+
+    /* Exibimos novamente o item Menu */
+
+    .menu li.icone {
+        display: block;
+        float: right;
+    }
+
+    /*Regra fechada (somente quando o .menu estiver junto com o .aberto, ou seja, somente com as duas classes escritas juntas.) */
+    .menu.aberto li {
+        float: none;
+        display: inline;
+    }
+
+    .menu.aberto { position: relative; }
+
+    /* Posicionando o botão do Menu à direita (em relação ao próprio menu) */
+    .menu.aberto li icone {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

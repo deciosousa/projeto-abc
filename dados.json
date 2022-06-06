@@ -1,0 +1,66 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java Pleno"
+    },
+    {
+      "id": 2,
+      "titulo": "Analista Comercial"
+    },
+    {
+      "id": 3,
+      "titulo": "Instrutor Excel Avançado"
+    },
+    {
+      "id": 4,
+      "titulo": "Gerente de Projetos para .NET"
+    },
+    {
+      "id": 5,
+      "titulo": "Consultor de Desenvolvimento Agil"
+    },
+    {
+      "id": 6,
+      "titulo": "Programador VB.Net"
+    },
+    {
+      "id": 7,
+      "titulo": "Desenvolvedor Front-End"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "DECIO JOSE DE SOUSA FILHO",
+      "data": "1985-11-12",
+      "telefone": "11969051926",
+      "email": "deciojsfilho@gmail.com",
+      "vaga": "Desenvolvedor Front-End",
+      "id": 1
+    },
+    {
+      "nome": "Edi Rodrigues",
+      "data": "1977-03-02",
+      "telefone": "11",
+      "email": "edirodri@gmail.com",
+      "vaga": "Programador Java Pleno",
+      "id": 2
+    },
+    {
+      "nome": "Tina",
+      "data": "1980-04-18",
+      "telefone": "1122222222",
+      "email": "tininha@tina.com",
+      "vaga": "Analista Comercial",
+      "id": 3
+    },
+    {
+      "nome": "DECIO JOSE DE SOUSA FILHO",
+      "data": "1985-11-12",
+      "telefone": "11969051926",
+      "email": "deciojsfilho@gmail.com",
+      "vaga": "Programador Java Pleno",
+      "id": 4
+    }
+  ]
+}

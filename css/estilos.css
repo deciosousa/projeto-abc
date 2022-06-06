@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; /* tirar todas as propriedade de margem é chamado de reset */
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-left: 10px;
+}
+
+#imagem-decorativa {
+    background-image: url(../imagens/teclado.jpg); /* A função URL serve para criar o caminho de busca do arquivo que será exibido */
+    height: 450px;
+    background-size: cover; /* cover faz com que a imagem cubra todo espaço da DIV. Na prática, deixa a imagem responsiva */
+    background-attachment: fixed; /* fixed deixa imagem fixa, independente da rolagem */
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    height: 150px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 51%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+
+    text-align: center;
+    display: flex; /* trabalha por eixos e direções */
+    justify-content: center; /* por padrão, trata do alinhamento na horizontal */
+    align-items: center; /* por padrão, trata do alinhamento na vertical*/
+    color: white;
+
+    clear: both; /*resolve efeito do float no rodapé */
+}
+
+/* DIV  que envolve as seções */
+
+.treinamentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Seções "filhas" da DIV de treinamentos */
+.treinamentos section{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: black 1px 1px 10px;
+}
+
+.flutuar-esquerda {
+    width: 250px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .treinamentos { flex-direction: column; }
+    .treinamentos section {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
